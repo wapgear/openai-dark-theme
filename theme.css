@@ -1,15 +1,23 @@
 @-moz-document domain("platform.openai.com") {
     body {
-        filter: invert(0.95);
+        filter: invert(0.95) hue-rotate(180deg);
         background-color: #1f1f1f;
     }
-
-    .code-sample-body.code-sample-body-large {
-        filter: invert(0.95);
+    
+    iframe, 
+    img,
+    video,
+    .icon-item-icon, 
+    .code-sample  {
+        filter: invert(0.95) hue-rotate(180deg);
     }
 
     .add-message-section.user-input,
-    .app-navigation.fixed.expanded {
+    .app-navigation.fixed.expanded,
+    .DocSearch-Modal {
         box-shadow: none;
+    }
+    .DocSearch-Container {
+        background: rgba(255,255,255, 0.85);
     }
 }
