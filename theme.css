@@ -1,0 +1,15 @@
+@-moz-document domain("platform.openai.com") {
+    body {
+        filter: invert(0.95);
+        background-color: #1f1f1f;
+    }
+
+    .code-sample-body.code-sample-body-large {
+        filter: invert(0.95);
+    }
+
+    .add-message-section.user-input,
+    .app-navigation.fixed.expanded {
+        box-shadow: none;
+    }
+}
